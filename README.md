@@ -45,6 +45,6 @@ For the frontend:
 - Develop a Card component for the carousel slider.
 - Separate filtration concerns from other components.
 - Optimize API requests by waiting for the user to finish typing before sending the next request to improve performance and reduce backend load.
-- Implement structural improvements such as having custom hooks for each resource handling error and success notifications. An example of this approach can be found in the custom React library "craft-ki-mui" [here](https://github.com/seifkowatli/craft-kit-mui).
+- Implement structural improvements such as having custom hooks for each resource handling error and success notifications. An example of this approach can be found in my custom React library "craft-ki-mui" [here](https://github.com/seifkowatli/craft-kit-mui).
 
 
