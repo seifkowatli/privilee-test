@@ -52,10 +52,13 @@ class ConvertCsv extends Command
         $json = json_encode($dataArray, JSON_PRETTY_PRINT);
         file_put_contents($jsonFile, $json);
 
-        // Convert data to XML
-        // $arrayToXml = new ArrayToXml($dataArray, 'root');
-        // $xml = $arrayToXml->toXml();
-        // file_put_contents($xmlFile, $xml);
+
+        $xmlData = array_map(function($hotel) {
+            return array_map('htmlspecialchars', $hotel);
+        }, $dataArray);
+        
+        $xml = ArrayToXml::convert(['__numeric' => $xmlData]); 
+        file_put_contents($xmlFile, $xml);
 
         $this->info('CSV file converted to JSON  successfully.');
         return 0;
