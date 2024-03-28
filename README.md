@@ -38,7 +38,6 @@ For the frontend:
 - Refactor controllers to expose only API endpoints and move business logic to reusable repository classes, utilizing dependency injection to inject repositories into controllers.
 - Implement a file converter server and integrate it into Laravel commands.
 
-(Note: XML conversion code is partially implemented and can be found commented in the backend project due to time constraints.)
 
 ### Frontend
 
